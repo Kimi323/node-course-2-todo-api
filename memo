@@ -1,0 +1,52 @@
+1.how to start mongodb
+  C:\Program Files\MongoDB\Server\3.6\bin>mongod.exe --dbpath \Users\hijisuki\mongo-data
+  mongo-data is a file made at first for storing data.
+  If "waiting for connections on port 27017" appears, it means success
+
+2.start script to connect
+  C:\Users\hijisuki\Desktop\node-todo-api\playground>node mongodb-connect.js
+
+3.commit to local and push to github repo
+    nothing added to commit but untracked files present (use "git add" to track)
+
+    C:\Users\hijisuki\Desktop\node-todo-api>git add .
+    warning: LF will be replaced by CRLF in package.json.
+    The file will have its original line endings in your working directory.
+
+    C:\Users\hijisuki\Desktop\node-todo-api>git commit -m "Init commit"
+
+    *** Please tell me who you are.
+
+    Run
+
+      git config --global user.email "you@example.com"
+      git config --global user.name "Your Name"
+
+    to set your account's default identity.
+    Omit --global to set the identity only in this repository.
+
+    fatal: unable to auto-detect email address (got '95978c©97Y93ñ@DESKTOP-48Q85H9.(none)')
+
+    C:\Users\hijisuki\Desktop\node-todo-api>git config --global user.email "wangmengya2010@yahoo.co.jp"
+
+    C:\Users\hijisuki\Desktop\node-todo-api>git config --global user.name "Kimi323"
+
+    C:\Users\hijisuki\Desktop\node-todo-api>git commit -m "Init commit"
+    [master (root-commit) 443728f] Init commit
+     4 files changed, 73 insertions(+)
+     create mode 100644 .gitignore
+     create mode 100644 package.json
+     create mode 100644 playground/mongodb-connect.js
+     create mode 100644 playground/mongodb-find.js
+
+    C:\Users\hijisuki\Desktop\node-todo-api>git remote add origin https://github.com/Kimi323/node-course-2-todo-api.git
+
+    C:\Users\hijisuki\Desktop\node-todo-api>git push -u origin master
+    Counting objects: 7, done.
+    Delta compression using up to 4 threads.
+    Compressing objects: 100% (6/6), done.
+    Writing objects: 100% (7/7), 1.36 KiB | 1.36 MiB/s, done.
+    Total 7 (delta 0), reused 0 (delta 0)
+    To https://github.com/Kimi323/node-course-2-todo-api.git
+     * [new branch]      master -> master
+    Branch 'master' set up to track remote branch 'master' from 'origin'.
